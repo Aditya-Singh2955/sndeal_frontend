@@ -1,0 +1,124 @@
+.orders {
+    padding: 20px;
+    width: 60%;
+}
+.Order_fix{
+    display: flex;
+    justify-content: center;
+}
+
+.orders h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #333;
+}
+
+.orders_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Consistent spacing between order cards */
+}
+
+.order {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order_header {
+    display: flex;
+    justify-content:space-around;
+    align-items: flex-start; /* Align items at the start of the flex container */
+    font-size: 12px; /* Slightly smaller font size */
+    color: #555; /* Adjusted color for consistency */
+    line-height: 1.5; /* Adjust line height for readability */
+    font-weight: bold; /* Make the text bold */
+}
+
+.order_header div {
+    text-align: left;
+    flex: 1; /* Distribute space evenly */
+    padding: 0 10px; /* Add horizontal padding for spacing */
+}
+
+.order_header div:first-child {
+    padding-left: 0; /* Remove left padding for the first element */
+}
+
+.order_header div:last-child {
+    padding-right: 0; /* Remove right padding for the last element */
+}
+
+.order_item {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+.order_image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 20px;
+    border: 1px solid #ddd; /* Border to match the screenshot */
+    padding: 5px; /* Add padding for better presentation */
+    background-color: #fff; /* Ensure the image background is white */
+}
+
+.order_details {
+    flex-grow: 1;
+}
+
+.order_details h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #007185;
+}
+
+.order_details p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.order_button {
+    background: #f0c14b;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+}
+
+
+
+.order_footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007185;
+}
+
+.order_footer a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.order_footer a:hover {
+    text-decoration: underline;
+}
+
+.order_archive {
+    margin-top: 15px;
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold; /* Make the archive button text bold */
+}

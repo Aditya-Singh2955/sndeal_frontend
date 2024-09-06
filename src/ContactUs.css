@@ -1,0 +1,109 @@
+.contact-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #111;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #111;
+  }
+  
+  .contact-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  
+  .contact-option {
+    background: #f7f7f7;
+    border-radius: 5px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  .contact-option h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contact-option p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .chat-option {
+    border: 1px solid #c8c8c8;
+  }
+  
+  .call-option {
+    border: 1px solid #c8c8c8;
+  }
+  
+  .action-button {
+    background-color: #37475a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius:  20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .self-service-header {
+    font-size: 18px;
+    color: #111;
+    margin-bottom: 20px;
+  }
+  
+  .self-service-options {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+  }
+  
+  .self-service-option {
+    text-align: center;
+    width: 200px;
+    font-size: 14px;
+    color: #0073bb;
+  }
+  
+  .icon-chat, .icon-call, .icon-order, .icon-content, .icon-prime, .icon-payment {
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    margin: 0 auto 10px;
+  }
+  
+  .icon-chat {
+    background-image: url('../public/Message.svg');
+  }
+  
+  .icon-call {
+    background-image: url('../public//Phone.svg');
+  }
+  
+  .icon-order {
+    background-image: url('../public//Box_smaller.png');
+  }
+  
+  .icon-content {
+    background-image: url('../public/Devices.png');
+  }
+  
+  .icon-prime {
+    background-image: url('../public/Prime.png');
+  }
+  
+  .icon-payment {
+    background-image: url('../public/Payments.png');
+  }

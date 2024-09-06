@@ -1,0 +1,147 @@
+.home__container {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+  
+  
+}
+
+.home__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+}
+.home__image {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -190px;
+  /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 50), rgba(0, 0, 0, 0)); */
+}
+/* Custom styles for Carousel navigation buttons */
+.carousel .control-prev {
+  background-color: rgba(0, 0, 0, 0.5); /* Change background color */
+  border-radius: 50%; /* Make buttons circular */
+  width: 40px; /* Adjust width */
+  height: 40px; /* Adjust height */
+  transform: translateY(500%) !important;
+  margin-left: 2rem;
+}
+
+.carousel .control-prev::before {
+  color: black; /* Change arrow color */
+  font-size: 24px; /* Adjust font size */
+}
+
+.carousel .control-next {
+  background-color: rgba(0, 0, 0, 0.5); /* Change background color */
+  border-radius: 50%; /* Make buttons circular */
+  width: 40px;
+  height: 40px; /* Adjust width */
+  /* Adjust height */
+  transform: translateY(500%) !important;
+  margin-right: 2rem;
+}
+
+.carousel .control-next::before {
+  color: black; /* Change arrow color */
+  font-size: 24px; /* Adjust font size */
+}
+
+.button-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1;
+  outline: 1px solid black;
+}
+
+.button-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Or any color you prefer */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 2;
+  outline: 1px solid black;
+}
+
+.button-left {
+  left: 60%;
+}
+
+.button-right {
+  right: 0;
+}
+
+/* Header.css */
+.header__profileDropdownContainer {
+  position: relative; /* Ensure the dropdown is positioned relative to this container */
+}
+
+.header__profileDropdownContainer .profileDropdown {
+  display: block; /* Ensure the dropdown is visible when needed */
+}
+
+.header__option:hover .header__dropdown_1 {
+  display: block; /* Show dropdown on hover */
+}
+
+
+.header__option {
+  position: relative; /* Make this the positioning context for the dropdown */
+}
+
+/* Styles for the Sign In/Sign Out dropdown */
+.header__signDropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  width: 150px; /* Adjust as needed */
+}
+
+/* Styles for the Your Product dropdown */
+
+.header__search {
+  position: relative; /* Position relative for the suggestion box */
+}
+
+.header__suggestions {
+  position: absolute;
+  top: 100%; /* Position it directly below the search input */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 100%; /* Make the suggestions box as wide as the search input */
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none; /* Initially hidden */
+}
+
+.header__suggestion {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.header__suggestion:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show suggestions if `showSuggestions` is true */
+.header__searchInput:focus + .header__suggestions,
+.header__searchInput:not(:placeholder-shown) + .header__suggestions {
+  display: block;
+}

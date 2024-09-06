@@ -1,0 +1,11 @@
+.p-text{
+  font-size: 12px;
+  font-weight: 500;
+}
+.header__option {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  cursor: pointer;
+}

@@ -1,0 +1,32 @@
+.home {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.home__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.home__row > div {
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+}
+
+.home__header {
+  color: #333;
+  margin-left: 10px;
+  text-align: start;
+  padding: 10px;
+  border-bottom: 0 solid black;
+}
+
+.home__header span {
+  display: inline-block;
+  background-color: #fff;
+  padding:20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

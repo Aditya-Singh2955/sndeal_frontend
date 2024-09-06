@@ -1,0 +1,127 @@
+.user-profile {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.user-profile__title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #333333;
+  text-align: start;
+}
+
+.user-profile__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile__success,
+.user-profile__error {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.user-profile__success {
+  background-color: #232f3e; /* Darker green for success */
+}
+
+.user-profile__error {
+  background-color: #d32f2f; /* Darker red for error */
+}
+
+.user-profile__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-profile__label {
+  flex: 0 0 150px; /* Fixed width for labels */
+  font-size: 16px;
+  color: #555555;
+  margin-right: 15px;
+}
+
+.user-profile__input {
+  flex: 1; /* Allow input to take remaining space */
+  padding: 12px;
+  border: 1px solid #c0c0c0;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.user-profile__input:focus {
+  border-color: #232f3e; /* Blue border on focus */
+  outline: none;
+}
+
+.user-profile__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-profile__button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-profile__save-button {
+  background-color: #232f3e; /* Green for save */
+}
+
+.user-profile__cancel-button {
+  background-color: #f44336; /* Red for cancel */
+}
+
+.user-profile__save-button:hover {
+  background-color: #232f3e; /* Darker green on hover */
+}
+
+.user-profile__cancel-button:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+
+.user-profile__edit-button {
+  margin-top: 20px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #232f3e; /* Blue for edit */
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 6rem;
+  
+}
+
+.user-profile__edit-button:hover {
+  background-color: #232f3e; /* Darker blue on hover */
+}
+
+.user-profile__value {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.5;
+}
